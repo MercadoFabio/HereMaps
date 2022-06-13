@@ -1,4 +1,4 @@
-import { environment } from "src/environments/environment";
+import { environment } from "src/environments/environment.prod";
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import H from '@here/maps-api-for-javascript';
 import { marcadoresProvider } from '../providers/marcadorProvider';
@@ -57,8 +57,6 @@ export class MapaComponent {
       new H.mapevents.Behavior(scroll);
       H.ui.UI.createDefault(map, layers, 'es-ES').getControl('mapsettings')
       this.obtenerMarcadores(map)
-      
-     
     }
   }
 }
