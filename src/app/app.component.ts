@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jsapi-angular';
+  href = 'https://fabio-mercado.netlify.app/'
+  target = 'blank'
+  
 }
